@@ -1,0 +1,21 @@
+function gcd(a,b){
+    while(b !== 0){
+        let temp =b;
+        b= a%b;
+        a= temp;
+    }
+    return a ;
+
+}
+    function lcm(a,b){
+        return a*b/gcd(a,b)
+    }
+
+    function lcmOfArray(arr){
+        return arr.reduce((acc, val) => lcm(acc, val))
+    }
+    
+
+
+let arr = [2,3,5];
+console.log( lcmOfArray(arr));
