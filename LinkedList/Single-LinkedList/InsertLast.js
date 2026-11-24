@@ -42,4 +42,5 @@ linkedlist.addLast(5)
 linkedlist.addLast(4)
 linkedlist.addLast(3)
 
+
 linkedlist.print()
